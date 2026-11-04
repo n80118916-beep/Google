@@ -1,0 +1,10 @@
+[
+{
+  "modid": "watermarkmod",
+  "name": "Google Watermark",
+  "description": "Adds a cool Google watermark.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "authorList": ["YourName"]
+}
+]
