@@ -1,12 +1,12 @@
 buildscript {
     repositories {
-        maven { url = 'https://maven.minecraftforge.net' }
         mavenCentral()
-        jcenter()
+        maven { url = 'https://maven.minecraftforge.net' }
+        maven { url = 'https://repo.spongepowered.org/repository/maven-public/' }
     }
     dependencies {
-        // Принудительно используем более новую версию ForgeGradle, которая умеет работать с текущими репозиториями
-        classpath 'net.minecraftforge.gradle:ForgeGradle:3.0.194'
+        // Правильный форк ForgeGradle для Minecraft 1.12.2
+        classpath 'com.anatawa12.forge:ForgeGradle:2.3-1.0.5'
     }
 }
 
