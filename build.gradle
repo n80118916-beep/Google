@@ -2,11 +2,12 @@ buildscript {
     repositories {
         mavenCentral()
         maven { url = 'https://maven.minecraftforge.net' }
-        maven { url = 'https://repo.spongepowered.org/repository/maven-public/' }
     }
     dependencies {
-        // Правильный форк ForgeGradle для Minecraft 1.12.2
-        classpath 'com.anatawa12.forge:ForgeGradle:2.3-1.0.5'
+        // Используем форк anatawa12 с автоматическим обновлением
+        classpath('com.anatawa12.forge:ForgeGradle:2.3-1.0.+') {
+            changing = true
+        }
     }
 }
 
