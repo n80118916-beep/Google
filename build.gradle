@@ -5,8 +5,8 @@ buildscript {
         jcenter()
     }
     dependencies {
-        // Используем поддерживаемый форк ForgeGradle
-        classpath 'com.anatawa12.forge:ForgeGradle:2.3-1.0.1'
+        // Принудительно используем более новую версию ForgeGradle, которая умеет работать с текущими репозиториями
+        classpath 'net.minecraftforge.gradle:ForgeGradle:3.0.194'
     }
 }
 
